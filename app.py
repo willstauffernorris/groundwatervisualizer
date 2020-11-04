@@ -130,19 +130,56 @@ fig.add_trace(go.Scatter(x=groundwater_df['Date'], y=groundwater_df['CFS (log)']
                       name='Cosumnes River CFS (log)'))
 # fig.show()
 
+fig.update_layout(
+    # autosize=False,
+    # width=500,
+    height=550,
+    margin=dict(
+        l=50,
+        r=50,
+        b=50,
+        t=50,
+        pad=0
+    ),
+    # paper_bgcolor="LightSteelBlue",
+)
 
+fig.update_layout(
+    title="Surface Flow vs Groundwater in the Cosumnes Basin",
+    xaxis_title="Date",
+    yaxis_title="Standard Deviation from Mean",
+    # legend_title="Legend Title",
+    # font=dict(
+    #     family="Courier New, monospace",
+    #     size=18,
+    #     color="RebeccaPurple"
+    # )
+)
 
 app.layout = html.Div(children=[
-    html.H1(children='Groundwater Visualization'),
+    html.H1(children='Groundwater Visualization 🚰'),
+    html.H4(children='See how different wells respond to changes in the Cosumnes River flow.'),
 
     html.Div(children='''
-        See how different wells respond to changes in the Cosumnes River flow.
+
+    Hover over a well to see its name and location.
+
     '''),
 
     dcc.Graph(
         id='example-graph',
         figure=map_fig
     ),
+    dcc.Markdown('''
+    
+    .
+
+    .
+
+    **Select an area on the figure below to zoom in. Double click to reset the graph.
+    Look for flow events, and notice the ~2 day lag that exists between the flow event and the response in many well levels.**
+    '''),
+
     dcc.Graph(
         id='example-graph2',
         figure=fig,
@@ -161,12 +198,14 @@ Also note that the streamflow has been log transformed to make it easier to see 
 
 -Ability to hover over a location and see only that well's time series data
 
+-Ability to toggle linear vs log view of streamflow
+
 -Drought severity index data over time displayed against the well data
 
 -Aesthetic improvements
 
 
-This visualization was created with data from **UC Water** with input from **The Freshwater Trust.**
+This visualization was created with data from **UC Water** with input from **The Freshwater Trust.** Developed by **Will Stauffer-Norris.**
 ''') 
     
 ])
