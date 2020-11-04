@@ -1,24 +1,28 @@
-Brotli @ file:///Users/runner/miniforge3/conda-bld/brotli-split_1603546210212/work
+Brotli==1.0.9
 certifi==2020.6.20
 click==7.1.2
-dash @ file:///home/conda/feedstock_root/build_artifacts/dash_1604061089786/work
-dash-core-components @ file:///home/conda/feedstock_root/build_artifacts/dash-core-components_1604054628327/work
-dash-html-components @ file:///home/conda/feedstock_root/build_artifacts/dash-html-components_1599715712112/work
-dash-renderer @ file:///home/conda/feedstock_root/build_artifacts/dash-renderer_1604054245287/work
-dash-table @ file:///home/conda/feedstock_root/build_artifacts/dash-table_1604056396782/work
+dash==1.17.0
+dash-core-components==1.13.0
+dash-html-components==1.1.1
+dash-renderer==1.8.3
+dash-table==4.11.0
 Flask==1.1.2
-Flask-Compress @ file:///home/conda/feedstock_root/build_artifacts/flask-compress_1602267119698/work
-future @ file:///Users/runner/miniforge3/conda-bld/future_1602538327724/work
-gunicorn @ file:///Users/runner/miniforge3/conda-bld/gunicorn_1602243029985/work
+Flask-Compress==1.7.0
+future==0.18.2
+gunicorn==20.0.4
 itsdangerous==1.1.0
 Jinja2==2.11.2
-MarkupSafe @ file:///Users/runner/miniforge3/conda-bld/markupsafe_1602267327822/work
-numpy @ file:///Users/runner/miniforge3/conda-bld/numpy_1603047582194/work
+MarkupSafe==1.1.1
+numpy==1.19.2
 pandas==1.1.4
-plotly @ file:///home/conda/feedstock_root/build_artifacts/plotly_1603467793398/work
+pip==20.2.4
+plotly==4.12.0
 python-dateutil==2.8.1
-pytz @ file:///home/conda/feedstock_root/build_artifacts/pytz_1604321279890/work
+pytz==2020.4
 PyYAML==5.3.1
 retrying==1.3.3
-six @ file:///home/conda/feedstock_root/build_artifacts/six_1590081179328/work
+setuptools==49.6.0.post20201009
+six==1.15.0
 Werkzeug==1.0.1
+wheel==0.35.1
+
